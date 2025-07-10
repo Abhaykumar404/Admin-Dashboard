@@ -22,7 +22,7 @@ const Home = () => {
     const isAdmin = email === 'admin@example.com' && password === 'adminpassword';
 
     if (!isAdmin) {
-      alert('You are not authorized to access the admin dashboard.');
+      alert('Invalid Password or Email. Please try again');
       return;
     }
 
