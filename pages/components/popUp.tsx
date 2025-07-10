@@ -8,6 +8,7 @@ type Props = {
 };
 
 const EditPopup = ({ data, onClose, onSave }: Props) => {
+   if (!data) return null;
   const [status, setStatus] = React.useState(data.status);
 
   const handleSave = () => {
